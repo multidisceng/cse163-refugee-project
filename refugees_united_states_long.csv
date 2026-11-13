@@ -1,0 +1,41 @@
+geography,period,total_arrivals,category,group,share_pct,rank,calculated
+United States,FY2018-FY2024,288709,Gender,Female,49.6,,False
+United States,FY2018-FY2024,288709,Gender,Male,50.1,,False
+United States,FY2018-FY2024,288709,Gender,Masked (suppressed),0.3,,False
+United States,FY2018-FY2024,288709,Age group,Under 15,39.2,,False
+United States,FY2018-FY2024,288709,Age group,16 to 64,58.4,,False
+United States,FY2018-FY2024,288709,Age group,65 and over,2.0,,False
+United States,FY2018-FY2024,288709,Age group,Masked (suppressed),0.3,,False
+United States,FY2018-FY2024,288709,Education level,Primary or lower,28.3,,False
+United States,FY2018-FY2024,288709,Education level,Secondary,29.6,,False
+United States,FY2018-FY2024,288709,Education level,Technical school,5.1,,False
+United States,FY2018-FY2024,288709,Education level,College / university,18.2,,False
+United States,FY2018-FY2024,288709,Education level,Graduate / professional,4.0,,False
+United States,FY2018-FY2024,288709,Education level,Unknown,14.7,,False
+United States,FY2018-FY2024,288709,English proficiency,,49.6,,False
+United States,FY2018-FY2024,288709,English proficiency,Elementary,16.2,,False
+United States,FY2018-FY2024,288709,English proficiency,Intermediate,4.1,,False
+United States,FY2018-FY2024,288709,English proficiency,Advanced,4.7,,False
+United States,FY2018-FY2024,288709,English proficiency,Unknown,25.4,,False
+United States,FY2018-FY2024,288709,Nationality,Dem. Rep. Congo,27.2,1,False
+United States,FY2018-FY2024,288709,Nationality,Syria,11.3,2,False
+United States,FY2018-FY2024,288709,Nationality,Afghanistan,10.9,3,False
+United States,FY2018-FY2024,288709,Nationality,Burma,10.3,4,False
+United States,FY2018-FY2024,288709,Nationality,Venezuela,5.2,5,False
+United States,FY2018-FY2024,288709,Nationality,Ukraine,5.0,6,False
+United States,FY2018-FY2024,288709,Nationality,Somalia,3.3,7,False
+United States,FY2018-FY2024,288709,Nationality,Guatemala,3.2,8,False
+United States,FY2018-FY2024,288709,Nationality,Eritrea,2.8,9,False
+United States,FY2018-FY2024,288709,Nationality,Sudan,2.5,10,False
+United States,FY2018-FY2024,288709,Nationality,All others (not in top 10),18.3,,True
+United States,FY2018-FY2024,288709,Primary language,Spanish,14.4,1,False
+United States,FY2018-FY2024,288709,Primary language,Arabic,13.5,2,False
+United States,FY2018-FY2024,288709,Primary language,Kiswahili,9.2,3,False
+United States,FY2018-FY2024,288709,Primary language,Dari,7.6,4,False
+United States,FY2018-FY2024,288709,Primary language,Kinyarwanda,5.8,5,False
+United States,FY2018-FY2024,288709,Primary language,Kibembe,5.2,6,False
+United States,FY2018-FY2024,288709,Primary language,Rohingya,3.6,7,False
+United States,FY2018-FY2024,288709,Primary language,Ukrainian,3.5,8,False
+United States,FY2018-FY2024,288709,Primary language,Somali,3.1,9,False
+United States,FY2018-FY2024,288709,Primary language,Russian,2.7,10,False
+United States,FY2018-FY2024,288709,Primary language,All others (not in top 10),31.4,,True

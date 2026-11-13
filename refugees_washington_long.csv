@@ -1,0 +1,41 @@
+geography,period,total_arrivals,category,group,share_pct,rank,calculated
+Washington,FY2018-FY2024,13688,Gender,Female,47.6,,False
+Washington,FY2018-FY2024,13688,Gender,Male,49.1,,False
+Washington,FY2018-FY2024,13688,Gender,Masked (suppressed),3.3,,False
+Washington,FY2018-FY2024,13688,Age group,Under 15,36.9,,False
+Washington,FY2018-FY2024,13688,Age group,16 to 64,57.0,,False
+Washington,FY2018-FY2024,13688,Age group,65 and over,2.8,,False
+Washington,FY2018-FY2024,13688,Age group,Masked (suppressed),3.3,,False
+Washington,FY2018-FY2024,13688,Education level,Primary or lower,14.7,,False
+Washington,FY2018-FY2024,13688,Education level,Secondary,27.0,,False
+Washington,FY2018-FY2024,13688,Education level,Technical school,8.7,,False
+Washington,FY2018-FY2024,13688,Education level,College / university,24.2,,False
+Washington,FY2018-FY2024,13688,Education level,Graduate / professional,18.5,,False
+Washington,FY2018-FY2024,13688,Education level,Unknown,7.0,,False
+Washington,FY2018-FY2024,13688,English proficiency,,42.1,,False
+Washington,FY2018-FY2024,13688,English proficiency,Elementary,13.6,,False
+Washington,FY2018-FY2024,13688,English proficiency,Intermediate,4.1,,False
+Washington,FY2018-FY2024,13688,English proficiency,Advanced,3.7,,False
+Washington,FY2018-FY2024,13688,English proficiency,Unknown,36.5,,False
+Washington,FY2018-FY2024,13688,Nationality,Ukraine,35.3,1,False
+Washington,FY2018-FY2024,13688,Nationality,Afghanistan,12.7,2,False
+Washington,FY2018-FY2024,13688,Nationality,Syria,6.5,3,False
+Washington,FY2018-FY2024,13688,Nationality,Dem. Rep. Congo,6.0,4,False
+Washington,FY2018-FY2024,13688,Nationality,Moldova,4.6,5,False
+Washington,FY2018-FY2024,13688,Nationality,Eritrea,4.3,6,False
+Washington,FY2018-FY2024,13688,Nationality,Burma,3.3,7,False
+Washington,FY2018-FY2024,13688,Nationality,Russia,3.3,8,False
+Washington,FY2018-FY2024,13688,Nationality,Somalia,2.6,9,False
+Washington,FY2018-FY2024,13688,Nationality,Venezuela,2.5,10,False
+Washington,FY2018-FY2024,13688,Nationality,All others (not in top 10),18.9,,True
+Washington,FY2018-FY2024,13688,Primary language,Ukrainian,26.5,1,False
+Washington,FY2018-FY2024,13688,Primary language,Russian,16.1,2,False
+Washington,FY2018-FY2024,13688,Primary language,Dari,9.2,3,False
+Washington,FY2018-FY2024,13688,Primary language,Arabic,8.5,4,False
+Washington,FY2018-FY2024,13688,Primary language,Spanish,7.8,5,False
+Washington,FY2018-FY2024,13688,Primary language,Masked,3.3,6,False
+Washington,FY2018-FY2024,13688,Primary language,Tigrinya,3.2,7,False
+Washington,FY2018-FY2024,13688,Primary language,Somali,2.4,8,False
+Washington,FY2018-FY2024,13688,Primary language,Romanian,2.3,9,False
+Washington,FY2018-FY2024,13688,Primary language,Kiswahili,2.3,10,False
+Washington,FY2018-FY2024,13688,Primary language,All others (not in top 10),18.4,,True
