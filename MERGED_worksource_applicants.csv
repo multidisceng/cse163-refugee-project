@@ -1,40 +1,40 @@
-County,Bin,WorkSource_Offices
-Adams,1 - 50,0
-Asotin,1 - 50,1
-Benton,Over 100,3
-Chelan,1 - 50,2
-Clallam,1 - 50,1
-Clark,Over 100,2
-Columbia,No applicants,0
-Cowlitz,1 - 50,1
-Douglas,1 - 50,0
-Ferry,No applicants,0
-Franklin,Over 100,1
-Garfield,No applicants,0
-Grant,51 - 100,1
-Grays Harbor,1 - 50,3
-Island,1 - 50,1
-Jefferson,1 - 50,0
-King,Over 100,21
-Kitsap,1 - 50,1
-Kittitas,1 - 50,1
-Klickitat,No applicants,2
-Lewis,1 - 50,1
-Lincoln,No applicants,1
-Mason,1 - 50,1
-Okanogan,1 - 50,1
-Pacific,1 - 50,2
-Pend Oreille,1 - 50,1
-Pierce,Over 100,25
-San Juan,1 - 50,0
-Skagit,51 - 100,1
-Skamania,No applicants,1
-Snohomish,Over 100,23
-Spokane,Over 100,18
-Stevens,1 - 50,1
-Thurston,Over 100,3
-Wahkiakum,No applicants,0
-Walla Walla,1 - 50,2
-Whatcom,Over 100,1
-Whitman,1 - 50,1
-Yakima,Over 100,3
+County,Bin,Strain_Bin
+Adams,1 - 9,"Applicants, no office"
+Asotin,1 - 9,Low (under 25 per office)
+Benton,201 - 500,High (101 - 300)
+Chelan,10 - 50,Low (under 25 per office)
+Clallam,1 - 9,Low (under 25 per office)
+Clark,"501 - 2,000",Very high (over 300)
+Columbia,No applicants,No applicants
+Cowlitz,10 - 50,Low (under 25 per office)
+Douglas,1 - 9,"Applicants, no office"
+Ferry,No applicants,No applicants
+Franklin,101 - 200,High (101 - 300)
+Garfield,No applicants,No applicants
+Grant,51 - 100,Moderate (25 - 100)
+Grays Harbor,10 - 50,Low (under 25 per office)
+Island,1 - 9,Low (under 25 per office)
+Jefferson,1 - 9,"Applicants, no office"
+King,"Over 2,000",High (101 - 300)
+Kitsap,10 - 50,Low (under 25 per office)
+Kittitas,1 - 9,Low (under 25 per office)
+Klickitat,No applicants,No applicants
+Lewis,10 - 50,Low (under 25 per office)
+Lincoln,No applicants,No applicants
+Mason,1 - 9,Low (under 25 per office)
+Okanogan,1 - 9,Low (under 25 per office)
+Pacific,1 - 9,Low (under 25 per office)
+Pend Oreille,1 - 9,Low (under 25 per office)
+Pierce,"501 - 2,000",Moderate (25 - 100)
+San Juan,1 - 9,"Applicants, no office"
+Skagit,51 - 100,Moderate (25 - 100)
+Skamania,No applicants,No applicants
+Snohomish,"501 - 2,000",Moderate (25 - 100)
+Spokane,"501 - 2,000",Moderate (25 - 100)
+Stevens,1 - 9,Low (under 25 per office)
+Thurston,101 - 200,Moderate (25 - 100)
+Wahkiakum,No applicants,No applicants
+Walla Walla,10 - 50,Low (under 25 per office)
+Whatcom,201 - 500,High (101 - 300)
+Whitman,1 - 9,Low (under 25 per office)
+Yakima,101 - 200,Moderate (25 - 100)
