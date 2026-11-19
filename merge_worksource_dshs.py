@@ -1,14 +1,24 @@
+
 import pandas as pd
  
-# applicants_vs_worksource.csv: County + exact DSHS applicant counts
-# (Applicants is blank where DSHS suppressed the value, meaning 1-9 applicants)
-a = pd.read_csv('applicants_vs_worksource.csv')[['County', 'Applicants']]
-w = pd.read_csv('worksource_locs.csv')
+APPLICANTS_FILE = 'applicants_vs_worksource.csv'   # County + exact DSHS counts (blank = suppressed, 1-9)
+WORKSOURCE_FILE = 'worksource_locs.csv'
+OUTPUT_FILE = 'MERGED_applicants_worksource.csv'
  
-# count WorkSource offices per county, then merge onto the applicant table
-offices = w.groupby('County').size().rename('Offices').reset_index()
-df = a.merge(offices, on='County', how='left', validate='1:1')
-df['Offices'] = df['Offices'].fillna(0).astype(int)   # counties with no office
+ 
+def load_data():
+    """Read the applicant counts and the WorkSource office list."""
+    applicants = pd.read_csv(APPLICANTS_FILE)[['County', 'Applicants']]
+    worksource = pd.read_csv(WORKSOURCE_FILE)
+    return applicants, worksource
+ 
+ 
+def merge_data(applicants, worksource):
+    """Count offices per county and merge them onto the applicant table."""
+    offices = worksource.groupby('County').size().rename('Offices').reset_index()
+    df = applicants.merge(offices, on='County', how='left', validate='1:1')
+    df['Offices'] = df['Offices'].fillna(0).astype(int)   # counties with no office
+    return df
  
  
 def applicant_bin(n):
@@ -35,7 +45,26 @@ def strain_bin(row):
     return 'Very high (over 300)'
  
  
-df['Bin'] = df['Applicants'].map(applicant_bin)
-df['Strain_Bin'] = df.apply(strain_bin, axis=1)
+def add_bins(df):
+    """Add the applicant bin and the strain bin columns."""
+    df = df.copy()
+    df['Bin'] = df['Applicants'].map(applicant_bin)
+    df['Strain_Bin'] = df.apply(strain_bin, axis=1)
+    return df
  
-df[['County', 'Bin', 'Strain_Bin']].to_csv('county_bins_strain.csv', index=False)
+ 
+def save_output(df):
+    df[['County', 'Bin', 'Strain_Bin']].to_csv(OUTPUT_FILE, index=False)
+ 
+ 
+def main():
+    applicants, worksource = load_data()
+    merged = merge_data(applicants, worksource)
+    binned = add_bins(merged)
+    save_output(binned)
+    print(f'Saved {OUTPUT_FILE} ({len(binned)} counties)')
+ 
+ 
+if __name__ == '__main__':
+    main()
+ 
