@@ -5,9 +5,10 @@ COUNTIES_FILE = "county_pop.csv"
 OUTPUT_FILE = "worksource_immigrant_merged.csv"
 
 
-def load_data(locations_path: str, counties_path: str) -> tuple[pd.DataFrame, pd.DataFrame]:
+def load_data(locations_path: str,
+              counties_path: str) -> tuple[pd.DataFrame, pd.DataFrame]:
     """
-    Load the WorkSource locations and county immigrant 
+    Load the WorkSource locations and county immigrant
     population CSVs.
     """
     locations = pd.read_csv(locations_path)
@@ -17,7 +18,7 @@ def load_data(locations_path: str, counties_path: str) -> tuple[pd.DataFrame, pd
 
 def count_locations_by_county(locations: pd.DataFrame) -> pd.DataFrame:
     """
-    Return the number of WorkSource locations in each 
+    Return the number of WorkSource locations in each
     county.
     """
     return (
@@ -27,24 +28,27 @@ def count_locations_by_county(locations: pd.DataFrame) -> pd.DataFrame:
     )
 
 
-def merge_datasets(counties: pd.DataFrame, office_counts: pd.DataFrame) -> pd.DataFrame:
+def merge_datasets(counties: pd.DataFrame,
+                   office_counts: pd.DataFrame) -> pd.DataFrame:
     """
-    Left-join location counts onto the county table, 
+    Left-join location counts onto the county table,
     keeping counties with 0 locations.
     """
     merged = counties.merge(office_counts, on="County", how="left")
-    merged["WorkSource Locations"] = merged["WorkSource Locations"].fillna(0).astype(int)
+    merged["WorkSource Locations"] = merged["WorkSource Locations"].fillna(
+        0).astype(int)
     return merged
 
 
 def add_immigrants_per_location(merged: pd.DataFrame) -> pd.DataFrame:
     """
-    Add immigrants per WorkSource location (blank where 
+    Add immigrants per WorkSource location (blank where
     a county has none).
     """
     merged = merged.copy()
     merged["Immigrants per Location"] = (
-        (merged["Immigrant (Foreign-Born) Population"] / merged["WorkSource Locations"])
+        (merged["Immigrant (Foreign-Born) Population"] /
+         merged["WorkSource Locations"])
         .where(merged["WorkSource Locations"] > 0)
         .round(0)
     )
@@ -73,8 +77,10 @@ def print_summary(merged: pd.DataFrame, locations: pd.DataFrame) -> None:
     Print the merged table and a short summary.
     """
     print(merged.to_string(index=False))
-    print("\nTotal locations matched:", merged["WorkSource Locations"].sum(), "of", len(locations))
-    no_location = merged.loc[merged["WorkSource Locations"] == 0, "County"].tolist()
+    print("\nTotal locations matched:",
+          merged["WorkSource Locations"].sum(), "of", len(locations))
+    no_location = merged.loc[merged["WorkSource Locations"] ==
+                             0, "County"].tolist()
     print("Counties with no location:", no_location)
 
 
